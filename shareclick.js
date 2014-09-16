@@ -2,9 +2,8 @@
 	var milkcocoa = new MilkCocoa("https://io-ehz546bne.mlkcca.com");
 	var ds = milkcocoa.dataStore('click');
 	var counter = 0;
-	ds.on('push', function(pushed) {
-		var id = 'id' + counter;
-		counter++;
+	ds.on('send', function(pushed) {
+		var id = pushed.value.element_id;
 		var cursor = document.createElement('div');
 		cursor.className = "shared_click";
 		cursor.id = id;
@@ -19,9 +18,12 @@
 	});
 
 	window.document.onmousedown = function(e) {
-		ds.push({
+		var element_id = "scid-" + counter + (String(Math.random()).substr(2));
+		ds.send({
+			element_id : element_id,
 			x : e.pageX,
 			y : e.pageY
 		});
+		counter++;
 	}
 }())

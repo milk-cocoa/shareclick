@@ -1,0 +1,4 @@
+click {
+  permit : send, on(send);
+  rule : true;
+}

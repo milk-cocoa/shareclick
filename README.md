@@ -1,6 +1,7 @@
 shareclick
 ==========
 
-add code to share click action.
+shareclick.cssとshareclick.jsをHTMLで読み込むことで、サイトに訪れた人のクリックアクションを、全員で共有することができます。
 
-  <script src="shareclick.js"></script>
+    <link rel="stylesheet" href="shareclick.css">
+    <script src="shareclick.js"></script>

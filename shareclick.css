@@ -1,0 +1,30 @@
+.shared_click {
+	animation: share_click_anime 0.5s ease-out 0s 3 alternate;
+	-webkit-animation: share_click_anime 0.5s ease-out 0s 3 alternate;
+	border-radius: 50%;
+	background: #2ecc71;
+	width: 50px;
+	height: 50px;
+}
+
+@keyframes share_click_anime {
+	0% {
+		opacity: 1.0;
+		transform: scale(0.1);
+	}
+	100% {
+		opacity: 0.0;
+		transform: scale(1);
+	}
+}
+
+@-webkit-keyframes share_click_anime {
+	0% {
+		opacity: 1.0;
+		transform: scale(0.1);
+	}
+	100% {
+		opacity: 0.0;
+		transform: scale(1);
+	}
+}

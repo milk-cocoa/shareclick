@@ -1,5 +1,5 @@
 (function(){
-	var milkcocoa = new MilkCocoa("https://io-ehz546bne.mlkcca.com");
+	var milkcocoa = new MilkCocoa("dogi9jz8c16.mlkcca.com");
 	var ds = milkcocoa.dataStore('click');
 	var counter = 0;
 	ds.on('send', function(pushed) {
